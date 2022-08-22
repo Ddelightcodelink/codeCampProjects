@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form 2</title>
+    <link rel="stylesheet" href="surveyform1.css">
+</head>
+<body>
+    <h1 id="title">Free Online Training Survey Form</h1> 
+   <p id="description">We appreciate your feedback to help us improve the platform</p>
+   <form action="#" id="survey-form">
+           <label id="name-label" for="name">Name<input id="name" type="text" placeholder= "Enter your name" required></label>
+           <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+           <label id="number-label" for="age">Age(optional)<input id="number" type="number" placeholder="Age" min="13" max="90"></label>
+           <label>Choose  the option that best describe your current role: 
+               <select id="dropdown">
+                   <option value="">Select current role</option>
+                   <option value="1">Student</option>
+                   <option value="2">Full Time Worker</option>
+                   <option value="3">Part Time Worker</option>
+               </select>
+           </label>
+       
+        <label>Will you recommend this free training to a friend?</label>
+            <label><input type="radio" name="user-response" value="Positive" class="inline">Yes</label>
+            <label><input type="radio" name="user-response" value="Negative" class="inline">No</label>
+            <label id=""><input type="radio" name="user-response" value="uncertain" class="inline">Not sure</label>
+       
+        <label>Select your favorite feature
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Challenge</option>
+                <option value="2">Project</option>
+                <option value="3">Open Source</option>
+            </select>
+        </label>
+        <label>What would you like us improved on? (Check all that apply)</label>
+        <label><input type="checkbox" value="Front" class="inline">Front-end Projects</label>
+        <label><input type="checkbox" value="Back" class="inline">Back-end Projects</label>
+        <label><input type="checkbox" value="Digital" class="inline">Digital Marketing Courses</label>
+        <label><input type="checkbox" value="Mobile" class="inline">Mobile App</label>
+        <label><input type="checkbox" value="Forum" class="inline">Forum</label>
+        <label><input type="checkbox" value="Add-Course" class="inline">Additional Courses</label>
+        <textarea cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+        <button id="submit" type="submit">Submit</button>
+   </form>
+</body>
+</html>
